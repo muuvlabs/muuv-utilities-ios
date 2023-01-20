@@ -4,7 +4,7 @@
 import PackageDescription
 
 let version = "0.0.2"
-let checksum = ""
+let checksum = "6edbd4021d6c647282dba0c4ff2831605f3bd28f7ab6ec112ba22caad8064ab3"
 
 let package = Package(
     name: "MuuvUtilities",
