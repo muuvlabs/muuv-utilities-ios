@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let version = "0.0.20"
-let checksum = "f7dc24f635f4862802939bbeff19342adbe3c5336c87438b5e9cd3cfbe770e6b"
+let version = "0.0.1"
+let checksum = ""
 
 let package = Package(
     name: "MuuvUtilities",
