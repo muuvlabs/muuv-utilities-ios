@@ -7,15 +7,15 @@ let version = "0.0.4"
 let checksum = "e398f97d460cf9a6e120833028f6d7c3e0ad3d597c408ef7c0f0239fc25acbd0"
 
 let package = Package(
-    name: "MuuvUtilities",
+    name: "MuuvEndpoints",
     platforms: [
         .iOS(.v15),
         .watchOS(.v5)
     ],
     products: [
         .library(
-            name: "MuuvUtilities",
-            targets: ["MuuvUtilities"]
+            name: "MuuvEndpoints",
+            targets: ["MuuvEndpoints"]
         )
     ],
     dependencies: [
@@ -24,8 +24,8 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "MuuvUtilities",
-            url: "https://github.com/muuvlabs/muuv-utilities-ios/releases/download/\(version)/MuuvUtilities_\(version).xcframework.zip",
+            name: "MuuvEndpoints",
+            url: "https://github.com/muuvlabs/muuv-utilities-ios/releases/download/\(version)/MuuvEndpoints_\(version).xcframework.zip",
             checksum: checksum
         )
     ]
