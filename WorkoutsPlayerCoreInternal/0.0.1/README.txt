@@ -1,2 +1,0 @@
-Version: 0.0.1
-Checksum: 1569bb5ed84dcd9c90b39226fc8899d636f767cf9c1f8524f0bc4778e500abe7
