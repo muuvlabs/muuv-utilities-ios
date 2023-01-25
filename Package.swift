@@ -4,30 +4,28 @@
 import PackageDescription
 
 let package = Package(
-    name: "WorkoutsPlayerWrapper",
-    platforms: [
-        .iOS(.v15),
-        .watchOS(.v5)
-    ],
+    name: "WorkoutsPlayer",
     products: [
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "WorkoutsPlayerWrapper",
-            targets: ["WorkoutsPlayerUI"]
-        )
+            name: "WorkoutsPlayer",
+            targets: ["WorkoutsPlayer", "WorkoutsPlayerUI"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
+        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "WorkoutsPlayerWrapper",
-            dependencies: ["WorkoutsPlayerUI"]
-        ),
+            name: "WorkoutsPlayer",
+            dependencies: []),
+        .testTarget(
+            name: "WorkoutsPlayerTests",
+            dependencies: ["WorkoutsPlayer"]),
         .binaryTarget(
             name: "WorkoutsPlayerUI",
-            url: "https://github.com/muuvlabs/muuv-utilities-ios/raw/master/WorkoutsPlayerUI/0.0.1/WorkoutsPlayerUI-0.0.1.xcframework.zip",
-            checksum: "c5c896187745a1422cf3bb9055f340bc6933fe7351f62ca709e35a5940af6e5f"
-        )
+            path: "WorkoutsPlayerUI.xcframework")
     ]
 )

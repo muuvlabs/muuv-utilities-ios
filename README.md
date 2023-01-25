@@ -1,3 +1,3 @@
-# WorkoutsPlayerWrapper
+# WorkoutsPlayerUI
 
 A description of this package.
